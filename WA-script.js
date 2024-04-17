@@ -17,22 +17,22 @@ async function checkWeather(city){
     document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
     if (data.weather[0].main == "Clouds") {
-        weatherIcon.src = "WA-img/clouds.png";
+        weatherIcon.src = "clouds.png";
     }
     else if(data.weather[0].main == "Clear"){
-        weatherIcon.src = "WA-img/clear.png";
+        weatherIcon.src = "clear.png";
     }
     else if(data.weather[0].main == "Rain"){
-        weatherIcon.src = "WA-img/rain.png";
+        weatherIcon.src = "rain.png";
     }
     else if(data.weather[0].main == "Drizzle"){
-        weatherIcon.src = "WA-img/dirzzle.png";
+        weatherIcon.src = "dirzzle.png";
     }
     else if(data.weather[0].main == "Mist"){
-        weatherIcon.src = "WA-img/mist.png";
+        weatherIcon.src = "mist.png";
     }
     else if(data.weather[0].main == "Smoke"){
-        weatherIcon.src = "WA-img/smoke.png";
+        weatherIcon.src = "smoke.png";
     }
 
     document.querySelector(".weather").style.display = "block";
