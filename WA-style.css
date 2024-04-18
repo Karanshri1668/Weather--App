@@ -86,3 +86,114 @@ body{
     margin-top: 10px;
     display: none;
 }
+
+
+@media only screen and (max-width: 768px) {
+    /* Your existing responsive CSS code goes here */
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'poppins', sans-serif;
+        box-sizing: border-box;
+      }
+      
+      body {
+        background: #222;
+      }
+      
+      .card {
+        width: 90%; /* Allow full width on phones */
+        max-width: unset; /* Remove max-width for flexibility */
+        background: linear-gradient(135deg, #00feba, #5b548a);
+        color: #fff;
+        margin: 50px auto 0; /* Adjust margin for better layout */
+        border-radius: 20px;
+        padding: 20px; /* Reduce padding for smaller screens */
+        text-align: center;
+      }
+      
+      .search {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; /* Wrap elements on smaller screens */
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .search input {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555;
+        padding: 10px 15px;
+        height: 40px; /* Reduce height for better touch experience */
+        border-radius: 30px;
+        flex: 1; /* Allow input to fill remaining space */
+        margin-right: 10px; /* Adjust margin for smaller screens */
+        font-size: 16px; /* Reduce font size for better readability */
+      }
+      
+      .search button {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 40px; /* Reduce button size for better touch experience */
+        height: 40px;
+        cursor: pointer;
+      }
+      
+      .search button img {
+        width: 12px; /* Reduce icon size for smaller screens */
+      }
+      
+      .weather-icon {
+        width: 120px; /* Adjust icon size for smaller screens */
+        margin-top: 20px; /* Adjust margin for better layout */
+      }
+      
+      .weather h1 {
+        font-size: 50px; /* Reduce font size for better readability */
+        font-weight: 500;
+      }
+      
+      .weather h2 {
+        font-size: 30px; /* Reduce font size for better readability */
+        font-weight: 400;
+        margin-top: -5px; /* Adjust margin for better layout */
+      }
+      
+      .details {
+        display: flex;
+        flex-wrap: wrap; /* Wrap elements on smaller screens */
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px; /* Reduce padding for smaller screens */
+        margin-top: 30px; /* Adjust margin for better layout */
+      }
+      
+      .col {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        width: 50%; /* Ensure columns take up half the width on phones */
+      }
+      
+      .col img {
+        width: 30px; /* Reduce icon size for smaller screens */
+        margin-right: 5px; /* Adjust margin for better layout */
+      }
+      
+      .weather {
+        display: none;
+      }
+      
+      .error {
+        text-align: left;
+        margin-left: 10px;
+        font-size: 12px; /* Reduce font size for better readability */
+        margin-top: 10px;
+        display: none;
+      }
+      
+}
